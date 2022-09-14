@@ -1,0 +1,86 @@
+#container{
+    display: flex;
+    justify-content: space-between;
+    background-color: oldlace;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+#befor{
+    display: flex;
+    padding:20px;
+    align-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    background-color: rgb(249, 214, 147);
+    border-radius: 15px;
+
+}
+.items{
+    margin: 5px;
+}
+#buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    background-color: rgb(143, 112, 56);
+    border-radius: 15px;
+
+
+}
+.btn{
+    height: 30px;
+    width: auto;
+    border-radius: 10px;
+    margin: 3px;
+    text-align: left;
+
+}
+#main{
+    display: flex;
+    padding:20px;
+    align-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    background-color: rgb(249, 214, 147);
+    border-radius: 15px;
+}
+@media (min-width: 360px) {
+    #container{
+        width: 100vw;
+        background-color: rgb(252, 232, 195);
+    }
+}
+@media (min-width: 560px) {
+    #container{
+        width: 90vw;
+    }
+}
+.square{
+    width: 60px;
+    height: 60px;
+    background: salmon;
+    margin-left: 5px;
+
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border: 30px solid transparent;
+    border-top: 0;    
+    border-bottom: 60px solid salmon;
+    margin-left: 5px;
+
+}
+.circle{
+    width: 60px;
+    height: 60px;
+    background: salmon;
+    border-radius: 50%;
+    margin-left: 5px;
+}
