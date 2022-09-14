@@ -149,13 +149,13 @@ const shapeFnc = () => {
 shapeFnc()
 
 const methodsName = () => {
-    arrMethod.map((item)=> {div =  document.createElement('div');
-    div.setAttribute('class','btn');
-    div.
-    document.getElementById('buttons').appendChild(div);
+    arrMethod.map((item)=> {button =  document.createElement('button');
+    button.setAttribute('class','btn');
+    button.appendChild(document.createTextNode(item.name));
+    document.getElementById('buttons').appendChild(button);
 })
         
-    return div 
+    return button
 }
 methodsName()
 
