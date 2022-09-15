@@ -27,7 +27,7 @@
 //     {name: '.revers()'},
 // ]
 const shapes = [
-    {id: 1,class: 'items square'},
+    {id: 1,class: 'items green'},
     {id: 2,class: 'items circle'},
     {id: 3,class: 'items circle'},
     {id: 4,class: 'items circle'},
@@ -102,9 +102,9 @@ const shapes = [
     {id: 73,class: 'items triangle'},
     {id: 74,class: 'items triangle'},
     {id: 75,class: 'items circle'},
-    {id: 76,class: 'items square'},
-    {id: 77,class: 'items triangle'},
-    {id: 78,class: 'items circle'},
+    {id: 76,class: 'items green'},
+    // {id: 77,class: 'items triangle'},
+    // {id: 78,class: 'items circle'},
 ]
 function createStyle() {
     const style = document.createElement('style');
@@ -138,6 +138,155 @@ function createStyle() {
 }
 // createStyle();
 
+// dynamic button call..........................................
+// const methodsName = () => {
+//     arrMethod.map((item)=> {button =  document.createElement('button');
+//     button.setAttribute('class','btn');
+//     button.appendChild(document.createTextNode(item.name));
+//     document.getElementById('buttons').appendChild(button);
+// })
+
+//     return button
+// }
+// methodsName()
+//.................................................................
+
+
+// map method
+const mapFnc = () => {
+    shapes.map((item)=> {div =  document.createElement('div');
+    div.setAttribute('class', 'items circle');
+    document.getElementById('main').appendChild(div);
+});      
+    return div 
+};
+
+// push method ..............................
+const pshFnc = () =>{
+    let obj = {id: 77,class: 'items star'};
+    return shapes.push(obj);
+};
+console.log(shapes);
+// pshFnc()
+//.............................
+// pop/////////////////
+const ppFnc = () => {
+    shapes.pop();
+}
+// ppFnc()
+//..........................
+
+// unshift method .......................................
+const ushtFnc = () => {
+    let obj = {id: 0,class: 'items star'};
+    return shapes.unshift(obj);
+}
+//..................................
+// console.log(ushtFnc());
+const shftFnc = () => {
+    shapes.shift();
+};
+// shftFnc();
+const splcFnc = () => {
+    let shapeHalf = shapes.length/2;
+
+    let secondHalf = {id: 77,class: 'items star'};
+    for (let i = 0; i < shapeHalf; i++) {
+        const element = [i];
+        shapes.splice(shapeHalf,0,secondHalf)
+        
+    }
+
+}
+splcFnc();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//...........shape Calling
 const shapeFnc = () => {
     shapes.map((item)=> {div =  document.createElement('div');
     div.setAttribute('class', item.class);
@@ -146,27 +295,4 @@ const shapeFnc = () => {
         
     return div 
 }
-shapeFnc()
-
-// const methodsName = () => {
-//     arrMethod.map((item)=> {button =  document.createElement('button');
-//     button.setAttribute('class','btn');
-//     button.appendChild(document.createTextNode(item.name));
-//     document.getElementById('buttons').appendChild(button);
-// })
-        
-//     return button
-// }
-// methodsName()
-
-
-
-const mapFnc = () => {
-    shapes.map((item)=> {div =  document.createElement('div');
-    div.setAttribute('class', 'items circle');
-    document.getElementById('main').appendChild(div);
-})
-        
-    return div 
-}
-
+shapeFnc();

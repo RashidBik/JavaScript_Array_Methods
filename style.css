@@ -84,3 +84,17 @@
     border-radius: 50%;
     margin-left: 5px;
 }
+.star{
+    width: 60px;
+    height: 60px;
+    background: rgb(255, 25, 0);
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.green{
+    width: 60px;
+    height: 60px;
+    background: rgb(9, 158, 14);
+    margin-left: 5px;
+
+}
