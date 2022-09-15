@@ -27,82 +27,82 @@
 //     {name: '.revers()'},
 // ]
 const shapes = [
-    {id: 1,class: 'items green'},
-    {id: 2,class: 'items circle'},
-    {id: 3,class: 'items circle'},
-    {id: 4,class: 'items circle'},
-    {id: 5,class: 'items triangle'},
-    {id: 6,class: 'items circle'},
-    {id: 7,class: 'items circle'},
-    {id: 8,class: 'items triangle'},
-    {id: 9,class: 'items circle'},
-    {id: 10,class: 'items square'},
-    {id: 11,class: 'items triangle'},
-    {id: 12,class: 'items circle'},
-    {id: 13,class: 'items circle'},
-    {id: 14,class: 'items square'},
-    {id: 15,class: 'items circle'},
-    {id: 16,class: 'items triangle'},
-    {id: 17,class: 'items triangle'},
-    {id: 18,class: 'items circle'},
-    {id: 19,class: 'items square'},
-    {id: 20,class: 'items square'},
-    {id: 21,class: 'items circle'},
-    {id: 22,class: 'items triangle'},
-    {id: 23,class: 'items circle'},
-    {id: 24,class: 'items circle'},
-    {id: 25,class: 'items circle'},
-    {id: 26,class: 'items square'},
-    {id: 27,class: 'items triangle'},
-    {id: 28,class: 'items square'},
-    {id: 29,class: 'items triangle'},
-    {id: 30,class: 'items circle'},
-    {id: 31,class: 'items circle'},
-    {id: 32,class: 'items triangle'},
-    {id: 33,class: 'items circle'},
-    {id: 34,class: 'items square'},
-    {id: 35,class: 'items triangle'},
-    {id: 36,class: 'items circle'},
-    {id: 37,class: 'items circle'},
-    {id: 38,class: 'items square'},
-    {id: 39,class: 'items square'},
-    {id: 40,class: 'items square'},
-    {id: 41,class: 'items triangle'},
-    {id: 42,class: 'items triangle'},
-    {id: 43,class: 'items square'},
-    {id: 44,class: 'items triangle'},
-    {id: 45,class: 'items circle'},
-    {id: 46,class: 'items square'},
-    {id: 47,class: 'items triangle'},
-    {id: 48,class: 'items square'},
-    {id: 49,class: 'items square'},
-    {id: 50,class: 'items triangle'},
-    {id: 51,class: 'items circle'},
-    {id: 52,class: 'items square'},
-    {id: 53,class: 'items circle'},
-    {id: 54,class: 'items circle'},
-    {id: 55,class: 'items square'},
-    {id: 56,class: 'items square'},
-    {id: 57,class: 'items triangle'},
-    {id: 58,class: 'items triangle'},
-    {id: 59,class: 'items triangle'},
-    {id: 60,class: 'items circle'},
-    {id: 61,class: 'items square'},
-    {id: 62,class: 'items circle'},
-    {id: 63,class: 'items square'},
-    {id: 64,class: 'items triangle'},
-    {id: 65,class: 'items triangle'},
-    {id: 66,class: 'items circle'},
-    {id: 67,class: 'items square'},
-    {id: 67,class: 'items square'},
-    {id: 69,class: 'items triangle'},
-    {id: 70,class: 'items square'},
-    {id: 71,class: 'items circle'},
-    {id: 72,class: 'items circle'},
-    {id: 73,class: 'items triangle'},
-    {id: 74,class: 'items triangle'},
-    {id: 75,class: 'items circle'},
-    {id: 76,class: 'items green'},
+    {class: 'items green'},
+    {class: 'items circle'},
+    {class: 'items circle'},
+    {class: 'items circle'},
+    {class: 'items triangle'},
+    {class: 'items circle'},
+    {class: 'items circle'},
+    {class: 'items triangle'},
+    {class: 'items circle'},
+    {class: 'items square'},
+    {class: 'items triangle'},
+    {class: 'items circle'},
+    {class: 'items circle'},
+    {class: 'items square'},
+    {class: 'items circle'},
+    {class: 'items triangle'},
+    {class: 'items triangle'},
+    {class: 'items circle'},
+    {class: 'items square'},
+    {class: 'items square'},
+    {class: 'items circle'},
+    {class: 'items triangle'},
+    {class: 'items circle'},
+    {class: 'items circle'},
+    {class: 'items circle'},
+    {class: 'items square'},
+    {class: 'items triangle'},
+    {class: 'items square'},
+    {class: 'items triangle'},
+    {class: 'items circle'},
+    {class: 'items circle'},
+    {class: 'items triangle'},
+    {class: 'items circle'},
+    {class: 'items square'},
+    {class: 'items triangle'},
+    {class: 'items circle'},
+    {class: 'items circle'},
+    {class: 'items square'},
+    {class: 'items square'},
+    {class: 'items square'},
+    {class: 'items triangle'},
+    {class: 'items triangle'},
+    {class: 'items square'},
+    {class: 'items triangle'},
+    {class: 'items circle'},
+    {class: 'items square'},
+    {class: 'items triangle'},
+    {class: 'items square'},
+    {class: 'items square'},
+    {class: 'items triangle'},
+    {class: 'items circle'},
+    {class: 'items square'},
+    {class: 'items circle'},
+    {class: 'items circle'},
+    {class: 'items square'},
+    {class: 'items square'},
+    {class: 'items triangle'},
+    {class: 'items triangle'},
+    {class: 'items triangle'},
+    {class: 'items circle'},
+    {class: 'items square'},
+    {class: 'items circle'},
+    {class: 'items square'},
+    {class: 'items triangle'},
+    {class: 'items triangle'},
+    {class: 'items circle'},
+    {class: 'items square'},
+    {class: 'items square'},
+    {class: 'items triangle'},
+    {class: 'items square'},
+    {class: 'items circle'},
+    {class: 'items circle'},
+    {class: 'items triangle'},
+    {class: 'items triangle'},
+    {class: 'items circle'},
+    {class: 'items green'},
     // {id: 77,class: 'items triangle'},
     // {id: 78,class: 'items circle'},
 ]
@@ -156,14 +156,14 @@ function createStyle() {
 const mapFnc = () => {
     shapes.map((item)=> {div =  document.createElement('div');
     div.setAttribute('class', 'items circle');
-    document.getElementById('main').appendChild(div);
+    document.getElementById('after').appendChild(div);
 });      
-    return div 
+    return div; 
 };
 
 // push method ..............................
 const pshFnc = () =>{
-    let obj = {id: 77,class: 'items star'};
+    let obj = {class: 'items star'};
     return shapes.push(obj);
 };
 console.log(shapes);
@@ -178,7 +178,7 @@ const ppFnc = () => {
 
 // unshift method .......................................
 const ushtFnc = () => {
-    let obj = {id: 0,class: 'items star'};
+    let obj = {class: 'items star'};
     return shapes.unshift(obj);
 }
 //..................................
@@ -189,16 +189,19 @@ const shftFnc = () => {
 // shftFnc();
 const splcFnc = () => {
     let shapeHalf = shapes.length/2;
-
-    let secondHalf = {id: 77,class: 'items star'};
     for (let i = 0; i < shapeHalf; i++) {
-        const element = [i];
-        shapes.splice(shapeHalf,0,secondHalf)
-        
+        // div = document.createElement('div');
+        // div.setAttribute('class','items ');
+        // document.getElementById('after').appendChild(div);
+
+        div = document.createElement('div');
+         div.setAttribute('class','items star');
+         let spl = document.getElementById('after').appendChild(shapes.splice(shapeHalf,0,div));    
+        // return spl;
     }
 
 }
-splcFnc();
+// splcFnc();
 
 
 
