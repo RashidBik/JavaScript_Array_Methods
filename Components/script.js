@@ -27,34 +27,34 @@
 //     {name: '.revers()'},
 // ]
 const shapes = [
-    {id: 1,class: 'items green'},
+    {id: 4,class: 'items green'},
     {id: 2,class: 'items circle'},
-    {id: 3,class: 'items circle'},
-    {id: 4,class: 'items circle'},
-    {id: 5,class: 'items triangle'},
-    {id: 6,class: 'items circle'},
-    {id: 7,class: 'items circle'},
-    {id: 8,class: 'items triangle'},
-    {id: 9,class: 'items circle'},
-    {id: 10,class: 'items square'},
-    {id: 11,class: 'items triangle'},
-    {id: 12,class: 'items circle'},
-    {id: 13,class: 'items circle'},
-    {id: 14,class: 'items square'},
-    {id: 15,class: 'items circle'},
-    {id: 16,class: 'items triangle'},
-    {id: 17,class: 'items triangle'},
-    {id: 18,class: 'items circle'},
-    {id: 19,class: 'items square'},
-    {id: 20,class: 'items square'},
-    {id: 21,class: 'items circle'},
-    {id: 22,class: 'items triangle'},
-    {id: 23,class: 'items circle'},
-    {id: 26,class: 'items square'},
-    {id: 27,class: 'items triangle'},
-    {id: 28,class: 'items square'},
-    {id: 29,class: 'items redCircle'},
-    {id: 30,class: 'items redCircle'},
+    {id: 2,class: 'items circle'},
+    {id: 2,class: 'items circle'},
+    {id: 3,class: 'items triangle'},
+    {id: 2,class: 'items circle'},
+    {id: 2,class: 'items circle'},
+    {id: 3,class: 'items triangle'},
+    {id: 2,class: 'items circle'},
+    {id: 4,class: 'items square'},
+    {id: 3,class: 'items triangle'},
+    {id: 2,class: 'items circle'},
+    {id: 2,class: 'items circle'},
+    {id: 4,class: 'items square'},
+    {id: 2,class: 'items circle'},
+    {id: 3,class: 'items triangle'},
+    {id: 3,class: 'items triangle'},
+    {id: 2,class: 'items circle'},
+    {id: 4,class: 'items square'},
+    {id: 4,class: 'items square'},
+    {id: 2,class: 'items circle'},
+    {id: 3,class: 'items triangle'},
+    {id: 2,class: 'items circle'},
+    {id: 4,class: 'items square'},
+    {id: 3,class: 'items triangle'},
+    {id: 4,class: 'items square'},
+    {id: 2,class: 'items redCircle'},
+    {id: 2,class: 'items redCircle'},
 ]
 function createStyle() {
     const style = document.createElement('style');
@@ -212,7 +212,11 @@ const srtFnc = () => {
     })
 }
 
-
+// filter method...........................
+// const ftrFnd = () => {
+//     let fltrShapes = [...shapes];
+//     fltrShapes.filter()
+// }
 
 
 
