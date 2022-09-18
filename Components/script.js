@@ -27,84 +27,34 @@
 //     {name: '.revers()'},
 // ]
 const shapes = [
-    {class: 'items green'},
-    {class: 'items circle'},
-    {class: 'items circle'},
-    {class: 'items circle'},
-    {class: 'items triangle'},
-    {class: 'items circle'},
-    {class: 'items circle'},
-    {class: 'items triangle'},
-    {class: 'items circle'},
-    {class: 'items square'},
-    {class: 'items triangle'},
-    {class: 'items circle'},
-    {class: 'items circle'},
-    {class: 'items square'},
-    {class: 'items circle'},
-    {class: 'items triangle'},
-    {class: 'items triangle'},
-    {class: 'items circle'},
-    {class: 'items square'},
-    {class: 'items square'},
-    {class: 'items circle'},
-    {class: 'items triangle'},
-    {class: 'items circle'},
-    {class: 'items circle'},
-    {class: 'items circle'},
-    {class: 'items square'},
-    {class: 'items triangle'},
-    {class: 'items square'},
-    {class: 'items triangle'},
-    {class: 'items circle'},
-    {class: 'items circle'},
-    {class: 'items triangle'},
-    {class: 'items circle'},
-    {class: 'items square'},
-    {class: 'items triangle'},
-    {class: 'items circle'},
-    {class: 'items circle'},
-    {class: 'items square'},
-    {class: 'items square'},
-    {class: 'items square'},
-    {class: 'items triangle'},
-    {class: 'items triangle'},
-    {class: 'items square'},
-    {class: 'items triangle'},
-    {class: 'items circle'},
-    {class: 'items square'},
-    {class: 'items triangle'},
-    {class: 'items square'},
-    {class: 'items square'},
-    {class: 'items triangle'},
-    {class: 'items circle'},
-    {class: 'items square'},
-    {class: 'items circle'},
-    {class: 'items circle'},
-    {class: 'items square'},
-    {class: 'items square'},
-    {class: 'items triangle'},
-    {class: 'items triangle'},
-    {class: 'items triangle'},
-    {class: 'items circle'},
-    {class: 'items square'},
-    {class: 'items circle'},
-    {class: 'items square'},
-    {class: 'items triangle'},
-    {class: 'items triangle'},
-    {class: 'items circle'},
-    {class: 'items square'},
-    {class: 'items square'},
-    {class: 'items triangle'},
-    {class: 'items square'},
-    {class: 'items circle'},
-    {class: 'items circle'},
-    {class: 'items triangle'},
-    {class: 'items triangle'},
-    {class: 'items circle'},
-    {class: 'items green'},
-    // {id: 77,class: 'items triangle'},
-    // {id: 78,class: 'items circle'},
+    {id: 1,class: 'items green'},
+    {id: 2,class: 'items circle'},
+    {id: 3,class: 'items circle'},
+    {id: 4,class: 'items circle'},
+    {id: 5,class: 'items triangle'},
+    {id: 6,class: 'items circle'},
+    {id: 7,class: 'items circle'},
+    {id: 8,class: 'items triangle'},
+    {id: 9,class: 'items circle'},
+    {id: 10,class: 'items square'},
+    {id: 11,class: 'items triangle'},
+    {id: 12,class: 'items circle'},
+    {id: 13,class: 'items circle'},
+    {id: 14,class: 'items square'},
+    {id: 15,class: 'items circle'},
+    {id: 16,class: 'items triangle'},
+    {id: 17,class: 'items triangle'},
+    {id: 18,class: 'items circle'},
+    {id: 19,class: 'items square'},
+    {id: 20,class: 'items square'},
+    {id: 21,class: 'items circle'},
+    {id: 22,class: 'items triangle'},
+    {id: 23,class: 'items circle'},
+    {id: 26,class: 'items square'},
+    {id: 27,class: 'items triangle'},
+    {id: 28,class: 'items square'},
+    {id: 29,class: 'items redCircle'},
+    {id: 30,class: 'items redCircle'},
 ]
 function createStyle() {
     const style = document.createElement('style');
@@ -153,6 +103,7 @@ function createStyle() {
 
 
 // map method
+// window.location.reload()
 const mapFnc = () => {
     shapes.map((item)=> {div =  document.createElement('div');
     div.setAttribute('class', 'items circle');
@@ -184,7 +135,8 @@ const ushtFnc = () => {
 //..................................
 // console.log(ushtFnc());
 const shftFnc = () => {
-    shapes.shift();
+    let shftShapes = [...shapes]
+    shftShapes.shift();
 };
 /////////////////////////////////////
 // shftFnc();
@@ -204,14 +156,61 @@ const splcFnc = () => {
          })
         return div;
 }
-splcFnc();
+///////////////////////////////////
 
+// slice method.........................
+const slcFnc = () => {
+    let slcShapes = [...shapes];
+    slcShapes.slice(0,10)
+    slcShapes.map((item) => {
+        div = document.createElement('div');
+        div.setAttribute('class',item.class);
+        document.getElementById('after').appendChild(div);
+    })
+   return div;
+}
 
-
-
-
-
-
+////////////////
+// some method.................
+const smeFnc = () => {
+  let bool =  shapes.some((item) => {
+       return item.class == 'items green';
+    })
+    let res = bool.toString();
+    document.getElementById('after').innerHTML = `some one is circle? ${res}`;
+}
+////////////////////
+// every method....................
+const evrFnc = () => {
+    let bool =  shapes.every((item) => {
+         return item.class == 'items green';
+      })
+      let res = bool.toString();
+      document.getElementById('after').innerHTML = `every one is circle? ${res}`;
+  }
+/////////////////////////
+// index method...................
+const idxFnc = () => {
+    let idx = shapes.map(item => item.class).indexOf('items triangle');
+   return document.getElementById('after').innerHTML = `index of the first triangle is: ${idx}` 
+}
+///////////////////////
+// lastIndexOf method...........
+const lstIdxFnc = () => {
+    let idx = shapes.map(item => item.class).lastIndexOf('items triangle');
+  return document.getElementById('after').innerHTML = `index of the last triangle is: ${idx}`
+ }
+///////////////////////
+// sort method
+const srtFnc = () => {
+    let srtShapes = [...shapes]
+   let sorted = srtShapes.sort((a,b) => b.id - a.id)
+    sorted.map(item => {
+        div = document.createElement('div');
+        div.setAttribute('class', item.class);
+        return document.getElementById('after').appendChild(div);
+    })
+}
 
 
 
