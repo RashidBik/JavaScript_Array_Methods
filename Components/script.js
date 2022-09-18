@@ -163,10 +163,10 @@ const mapFnc = () => {
 
 // push method ..............................
 const pshFnc = () =>{
-    let obj = {class: 'items star'};
+    let obj = {class: 'items redCircle'};
     return shapes.push(obj);
 };
-console.log(shapes);
+// console.log(shapes);
 // pshFnc()
 //.............................
 // pop/////////////////
@@ -178,7 +178,7 @@ const ppFnc = () => {
 
 // unshift method .......................................
 const ushtFnc = () => {
-    let obj = {class: 'items star'};
+    let obj = {class: 'items redCircle'}; // never care that makes sense
     return shapes.unshift(obj);
 }
 //..................................
@@ -186,22 +186,25 @@ const ushtFnc = () => {
 const shftFnc = () => {
     shapes.shift();
 };
+/////////////////////////////////////
 // shftFnc();
 const splcFnc = () => {
-    let shapeHalf = shapes.length/2;
+    let shapes1 = [...shapes];
+    let shapeHalf = shapes1.length/2;
+    let shapes2 = [];
     for (let i = 0; i < shapeHalf; i++) {
-        // div = document.createElement('div');
-        // div.setAttribute('class','items ');
-        // document.getElementById('after').appendChild(div);
-
-        div = document.createElement('div');
-         div.setAttribute('class','items star');
-         let spl = document.getElementById('after').appendChild(shapes.splice(shapeHalf,0,div));    
-        // return spl;
+            shapes2[i] = {class:'items redCircle'};
     }
-
+   let shapes3 = shapes1.splice(0,shapes2.length);
+         let after = (shapes3.concat(shapes2));
+         after.map((item) => {
+             div = document.createElement('div');
+             div.setAttribute('class',item.class);
+             document.getElementById('after').appendChild(div);
+         })
+        return div;
 }
-// splcFnc();
+splcFnc();
 
 
 
