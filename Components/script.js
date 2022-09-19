@@ -103,7 +103,6 @@ function createStyle() {
 
 
 // map method
-// window.location.reload()
 const mapFnc = () => {
     shapes.map((item)=> {div =  document.createElement('div');
     div.setAttribute('class', 'items circle');
@@ -111,35 +110,26 @@ const mapFnc = () => {
 });      
     return div; 
 };
-
-// push method ..............................
+// push method 
 const pshFnc = () =>{
     let obj = {class: 'items redCircle'};
     return shapes.push(obj);
 };
-// console.log(shapes);
-// pshFnc()
-//.............................
-// pop/////////////////
+// pop method
 const ppFnc = () => {
     shapes.pop();
-}
-// ppFnc()
-//..........................
-
-// unshift method .......................................
+};
+// unshift method
 const ushtFnc = () => {
     let obj = {class: 'items redCircle'}; // never care that makes sense
     return shapes.unshift(obj);
-}
-//..................................
-// console.log(ushtFnc());
+};
+// shift mehtod
 const shftFnc = () => {
     let shftShapes = [...shapes]
     shftShapes.shift();
 };
-/////////////////////////////////////
-// shftFnc();
+// splice method
 const splcFnc = () => {
     let shapes1 = [...shapes];
     let shapeHalf = shapes1.length/2;
@@ -155,10 +145,8 @@ const splcFnc = () => {
              document.getElementById('after').appendChild(div);
          })
         return div;
-}
-///////////////////////////////////
-
-// slice method.........................
+};
+// slice method
 const slcFnc = () => {
     let slcShapes = [...shapes];
     slcShapes.slice(0,10)
@@ -168,39 +156,33 @@ const slcFnc = () => {
         document.getElementById('after').appendChild(div);
     })
    return div;
-}
-
-////////////////
-// some method.................
+};
+// some method
 const smeFnc = () => {
   let bool =  shapes.some((item) => {
        return item.class == 'items green';
     })
     let res = bool.toString();
     document.getElementById('after').innerHTML = `some one is circle? ${res}`;
-}
-////////////////////
-// every method....................
+};
+// every method
 const evrFnc = () => {
     let bool =  shapes.every((item) => {
          return item.class == 'items green';
       })
       let res = bool.toString();
       document.getElementById('after').innerHTML = `every one is circle? ${res}`;
-  }
-/////////////////////////
-// index method...................
+  };
+// index method
 const idxFnc = () => {
     let idx = shapes.map(item => item.class).indexOf('items triangle');
    return document.getElementById('after').innerHTML = `index of the first triangle is: ${idx}` 
-}
-///////////////////////
-// lastIndexOf method...........
+};
+// lastIndexOf method
 const lstIdxFnc = () => {
     let idx = shapes.map(item => item.class).lastIndexOf('items triangle');
   return document.getElementById('after').innerHTML = `index of the last triangle is: ${idx}`
- }
-///////////////////////
+ };
 // sort method
 const srtFnc = () => {
     let srtShapes = [...shapes]
@@ -210,9 +192,8 @@ const srtFnc = () => {
         div.setAttribute('class', item.class);
         return document.getElementById('after').appendChild(div);
     })
-}
-
-// filter method...........................
+};
+// filter method
 const ftrFnc = () => {
     let fltrShapes = [...shapes];
     let fltrd = fltrShapes.filter((value) => {
@@ -220,9 +201,8 @@ const ftrFnc = () => {
        div.setAttribute('class', (value.id == 3 && value.class))
        document.getElementById('after').appendChild(div);
     })
-}
-
-// fill method....................
+};
+// fill method
 const filFnc = () => {
     let flShapes = [...shapes];
     let filld = flShapes.fill({id: 4,class: 'items green'})
@@ -231,82 +211,7 @@ const filFnc = () => {
         div.setAttribute('class', item.class);
       return document.getElementById('after').appendChild(div);
     })
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+};
 //...........shape Calling
 const shapeFnc = () => {
     shapes.map((item)=> {div =  document.createElement('div');
