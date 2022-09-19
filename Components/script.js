@@ -213,13 +213,25 @@ const srtFnc = () => {
 }
 
 // filter method...........................
-// const ftrFnd = () => {
-//     let fltrShapes = [...shapes];
-//     fltrShapes.filter()
-// }
+const ftrFnc = () => {
+    let fltrShapes = [...shapes];
+    let fltrd = fltrShapes.filter((value) => {
+       div = document.createElement('div');
+       div.setAttribute('class', (value.id == 3 && value.class))
+       document.getElementById('after').appendChild(div);
+    })
+}
 
-
-
+// fill method....................
+const filFnc = () => {
+    let flShapes = [...shapes];
+    let filld = flShapes.fill({id: 4,class: 'items green'})
+    filld.map(item => {
+        div = document.createElement('div');
+        div.setAttribute('class', item.class);
+      return document.getElementById('after').appendChild(div);
+    })
+}
 
 
 
