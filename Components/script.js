@@ -252,7 +252,7 @@ const fltFnc = () => {
 }
 // from mehtod
 const frmFnc = () => {
-
+    // Array.from(new Set(shapes))
 }
 // include method 
 const iclFnc = () => {
@@ -264,13 +264,25 @@ const iArrFnc = () => {
 }
 // revers mehtod
 const rvrFnc = () => {
-
+    const rvrSahpes = [...shapes];
+    rvrSahpes.reverse().map((item) =>{
+    div = document.createElement('div');
+    div.setAttribute('class',item.class)
+    document.getElementById('after').appendChild(div);
+})
+   
 }
 // reduce mehtod
 const rducFnc = () => {
-
-}
-
+    const rdcShapes = [...shapes];
+    rdcShapes.reduce((acc) => {
+        // acc = item.class
+        acc = 'poly';
+        div = document.createElement('div');
+        div.setAttribute('class',acc);
+        document.getElementById('after').appendChild(div)
+    })
+};
 
 
 
