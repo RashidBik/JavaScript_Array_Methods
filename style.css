@@ -98,8 +98,15 @@
     margin-left: 5px;
 
 }
+.blu{
+    background-color: darkslateblue;
+}
 
+.triangle.blu{
+    background-color: none;
+    border-bottom-color: darkslateblue;
 
+}
 
 
 

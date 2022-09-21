@@ -234,13 +234,14 @@ const fndIdxFnc = () => {
  };
 // foreach method
 const frchFnc = () => {
-    const echOne = shapes.forEach((item) => {
-
+    const frShapes = [...shapes];
+    const echOne = frShapes.forEach((item) => {
+        div = document.createElement('div');
+        div.setAttribute('class', item.class += ' blu');
+       return document.getElementById('after').appendChild(div);
     })
+    return echOne;
 }
-
-
-
 
 
 
