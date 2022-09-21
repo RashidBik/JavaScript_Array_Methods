@@ -212,6 +212,44 @@ const filFnc = () => {
       return document.getElementById('after').appendChild(div);
     })
 };
+// find method
+const fndFnc = () => {
+   const found = shapes.find(value => {
+    value.class == 'items green';
+    console.log(value.class);
+   div = document.createElement('div');
+    div.setAttribute('class', value.class);
+    return document.getElementById('after').appendChild(div);
+   })
+};
+
+//findIndex meyhod
+const fndIdxFnc = () => {
+    const found = shapes.findIndex(value => {
+     value.class == 'items green';
+    div = document.createElement('div');
+     div.setAttribute('class', value.class);
+     return document.getElementById('after').appendChild(div);
+    })
+ };
+// foreach method
+const frchFnc = () => {
+    const echOne = shapes.forEach((item) => {
+
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
+
 //...........shape Calling
 const shapeFnc = () => {
     shapes.map((item)=> {div =  document.createElement('div');
@@ -220,5 +258,5 @@ const shapeFnc = () => {
 })
         
     return div 
-}
+};
 shapeFnc();
