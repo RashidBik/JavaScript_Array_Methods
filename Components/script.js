@@ -242,11 +242,34 @@ const frchFnc = () => {
     })
     return echOne;
 }
+// flat method
+const fltFnc = () => {
+    // let fltShapes = [...shapes];
+    // fltShapes.flat(2);
+    p = document.createElement('p');
+    p.textContent = 'There is only one array';
+    document.getElementById('after').appendChild(p);
+}
+// from mehtod
+const frmFnc = () => {
 
+}
+// include method 
+const iclFnc = () => {
 
+}
+// isArray mehtod
+const iArrFnc = () => {
 
+}
+// revers mehtod
+const rvrFnc = () => {
 
+}
+// reduce mehtod
+const rducFnc = () => {
 
+}
 
 
 
